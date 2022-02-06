@@ -1,1 +1,1 @@
-# Cool-Terminal-2022-
+# Cool-Terminal-2022
