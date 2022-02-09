@@ -1,5 +1,6 @@
+from platform import platform
 from src import depends
-from creativness import clutter
+
 
 
 hostname = depends.socket.gethostname()
@@ -25,7 +26,7 @@ def main():
         elif 'package' in code:
             depends.define.definition.package(code)
         elif code == 'python':
-            depends.subprocess.call("python3")
+            depends.subprocess.call("python")
         elif code == 'time' or code == 'date':
             depends.define.definition.times()
         elif code == 'terminal' :

@@ -12,7 +12,7 @@ class definition:
         print("We have found ip addresses with open ports that you may like to connect: \n")
         print(depends.subprocess.run(['dig','+short',hosts]))
     def cls():
-        if depends.platform == 'windows':
+        if depends.platform.system() == 'Windows':
             depends.os.system("cls")
         else:
             depends.os.system("clear")
@@ -30,7 +30,7 @@ class definition:
          print("Your Local ip address is: "+hostip)
          print("Your Desktop name is: "+hostname)
     def drunk():
-        depends.os.system("clear")
+        depends.define.definition.cls()
         print("Sleep or drunk have a good dose of quick nap \U0001f6cc")
         depends.etc.countdown(int(600))
     def package(codes):
@@ -39,7 +39,7 @@ class definition:
     def times():
         utc = depends.time.strftime("%z")
         zone = depends.time.strftime("%Z")
-        now = depends.datetime.now().strftime(f"%-d %b, %Y || %-I:%-M:%-S %p || {zone} time zone with utc offset of {utc}")
+        now = depends.datetime.now().strftime(f"%d %b, %Y || %I:%M:%S %p || {zone} zone with utc offset of {utc}")
         print(now)
     def cursive():
         depends.cursives.fonts.main()

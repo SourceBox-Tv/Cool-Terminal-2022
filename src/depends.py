@@ -5,9 +5,10 @@ import time
 import os
 from clint.textui import puts,colored
 from creativness import cursives
-import readline 
-import rlcompleter 
-import atexit
+if platform.system == "linux":
+    import readline 
+    import rlcompleter 
+    import atexit
 import distro
 import random
 from src import define

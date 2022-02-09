@@ -25,5 +25,5 @@ def distro(cd):
         depends.os.system("xbps-install -S"+cd)
     elif depends.distro.id() == "solus":
         depends.os.system("eopkg install"+cd)
-    elif depends.platform == "windows":
-        depends.os.system("scoop install"+cd)
+    elif depends.platform.system() == "Windows":
+        depends.os.system("winget install"+cd)
