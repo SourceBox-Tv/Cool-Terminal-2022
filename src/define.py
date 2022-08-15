@@ -46,5 +46,5 @@ class definition:
         print("You know something, that we are very cool.")
     def ssh(codes):
         depends.os.system(codes)
-        
-//FIXME:FIX define.py
+    
+#FIXME:FIX define.py
